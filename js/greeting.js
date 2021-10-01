@@ -21,10 +21,8 @@ const onLoginSubmit = (event) => {
 };
 
 if (savedUsername === null) {
-    // show the form
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-    // show the greetings
     paintGreetings(savedUsername);
 }
