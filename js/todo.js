@@ -23,7 +23,7 @@ const paintToDo = (newToDo) => {
   const span = document.createElement("span");
   const btn = document.createElement("button");
   let text = newToDo.text;
-  text = text.length < 11 ? text : text.substr(0, 11) + "...";
+  text = text.length < 8 ? text : text.substr(0, 8) + "...";
   span.innerText = text;
   btn.innerText = "❎";
   btn.addEventListener("click", deleteToDo);
