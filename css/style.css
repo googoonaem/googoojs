@@ -7,6 +7,28 @@ body {
   height: 100vh;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
+#login-form {
+  position: absolute;
+  align-self: center;
+  margin-bottom: 250px;
+  justify-self: center;
+}
+#login-form > input:first-child {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 200;
+  width: 350px;
+}
+#login-form > input:first-child::placeholder {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
 button {
   background: none;
   border: none;
