@@ -52,7 +52,7 @@ ul {
   grid-auto-flow: column;
 }
 li {
-  list-style: none;
+  list-style-type: decimal;
   margin: 10px 0;
 }
 .hidden {
