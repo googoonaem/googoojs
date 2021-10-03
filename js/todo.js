@@ -22,7 +22,9 @@ const paintToDo = (newToDo) => {
   const li = document.createElement("li");
   const span = document.createElement("span");
   const btn = document.createElement("button");
-  span.innerText = newToDo.text;
+  let text = newToDo.text;
+  text = text.length < 14 ? text : text.substr(0, 14) + "...";
+  span.innerText = text;
   btn.innerText = "❎";
   btn.addEventListener("click", deleteToDo);
   li.appendChild(span);
@@ -35,6 +37,10 @@ const handleToDoSubmit = (event) => {
   event.preventDefault();
   const newToDo = toDoInput.value;
   toDoInput.value = "";
+  if (toDos.length >= 24) {
+    alert("too many todos.");
+    return;
+  }
   const newToDoObj = {
     text: newToDo,
     id: Date.now(),
