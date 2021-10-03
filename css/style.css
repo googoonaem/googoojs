@@ -44,10 +44,8 @@ button {
 }
 ul {
   display: grid;
-  width: 650px;
-  height: 400px;
+  height: 60%;
   overflow: hidden;
-  grid-template-columns: repeat(auto-fill, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-auto-flow: column;
 }
@@ -62,8 +60,9 @@ li {
   justify-self: center;
   align-self: center;
   display: grid;
-  background-color: rgba(0, 0, 0, 0.3);
   padding: 20px 0;
+  width: 50%;
+  min-width: 360px;
 }
 #day {
   justify-self: center;
